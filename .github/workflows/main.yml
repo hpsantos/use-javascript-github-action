@@ -7,17 +7,17 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: hpsantos/javascript-github-action@v1.5
+        uses: hpsantos/javascript-github-action@v1.6
         with:
           who-to-greet: "Mona the Octocat"
       # Use the output from the `hello` step
       - name: Get the output time from hello
         run: echo "The time was ${{ steps.hello.outputs.time }}"
-      - name: Wait some miliseconds
-        id: wait
-        uses: hpsantos/typescript-github-action@v1.1
-        with:
-          miliseconds: 5000
-      # Use the output from the `hello` step
-      - name: Get the output time from wait
-        run: echo "The time was ${{ steps.wait.outputs.time }}"
+      # - name: Wait some miliseconds
+      #   id: wait
+      #   uses: hpsantos/typescript-github-action@v1.1
+      #   with:
+      #     miliseconds: 5000
+      # # Use the output from the `hello` step
+      # - name: Get the output time from wait
+      #   run: echo "The time was ${{ steps.wait.outputs.time }}"
