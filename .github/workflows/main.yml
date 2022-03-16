@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: hpsantos/javascript-github-action@main
+        uses: hpsantos/javascript-github-action@latest
         with:
           who-to-greet: "Mona the Octocat"
       # Use the output from the `hello` step
